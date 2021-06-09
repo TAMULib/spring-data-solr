@@ -330,19 +330,30 @@
 		<url>https://build.spring.io/browse/DATASOLR</url>
 	</ciManagement>
 
-	<repositories>
+	<!-- <repositories>
 		<repository>
 			<id>spring-libs-release</id>
 			<url>https://repo.spring.io/libs-release</url>
 		</repository>
-	</repositories>
+	</repositories> -->
 
-	<pluginRepositories>
+	<!-- <pluginRepositories>
 		<pluginRepository>
 			<id>bintray-plugins</id>
 			<name>bintray-plugins</name>
 			<url>https://jcenter.bintray.com</url>
 		</pluginRepository>
-	</pluginRepositories>
+	</pluginRepositories> -->
+
+	<distributionManagement>
+		<repository>
+			<id>tamu-releases</id>
+			<url>https://artifacts.library.tamu.edu/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>tamu-snapshots</id>
+			<url>https://artifacts.library.tamu.edu/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
